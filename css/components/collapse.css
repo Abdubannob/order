@@ -1,0 +1,71 @@
+.custom-expand{
+	display: flex;
+	flex-direction: column-reverse;
+}
+ .custom-expand-btn.expand-button.collapsed:after,
+ .uploaded-submition-btn.expand-button.collapsed:after{
+  background-image: url(../../images/influencer-list/accardion-expand.svg);
+  transform: rotate(180deg);
+  transition: ease-in-out .3s;
+}
+.custom-expand-btn.expand-button:after {
+  content: " ";
+  width: 10px;
+  height: 5px;
+  position: absolute;
+  margin-top: 7px;
+  margin-left: 5px;
+  background-image: url(../../images/influencer-list/accardion-expand.svg);
+  background-repeat: no-repeat;
+  transition: ease-in-out .3s;
+}
+.custom-expand-btn.btn{
+  background: #F9F9FF;
+  border: 1px solid #E9EBF3;
+  border-radius: 4px;
+  padding: 10px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #212121;
+}
+.custom-expand-btn.btn span,
+.custom-expand-btn.btn b{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #212121;
+}
+.custom-expand-btn b{display:inline}
+.custom-expand-btn:not(.collapsed)  span{display:none}
+.custom-expand-btn.collapsed b {display:none}
+
+.expand-button:not(.collapsed) ~ .order-main-info {display:none}
+
+
+.uploaded-submition-btn .btn{
+  padding: 0;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #212121;
+  text-align: left;
+  width: 100%;
+}
+.uploaded-submition-btn .btn img{
+  margin-right: 10px;
+}
+.uploaded-submition-btn .expand-button:after{
+  content: " ";
+  width: 10px;
+  height: 5px;
+  position: relative;
+  float: right;
+  top: 8px;
+  background-image: url(../../images/influencer-list/accardion-expand.svg);
+  background-repeat: no-repeat;
+  transition: ease-in-out .3s;
+}
